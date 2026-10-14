@@ -64,7 +64,7 @@ Config.Labels = {
 ```
 
 ---
-<img width="1920" height="1080" alt="pausemenu" src="https://github.com/user-attachments/assets/62977eec-9f67-4f0f-bf98-66419370b8e1" />
+<img width="1917" height="1017" alt="pausemenu" src="https://github.com/user-attachments/assets/d42d1b1a-e640-4c43-90c2-356387169c13" />
 
 ## Lisans
 
