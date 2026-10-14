@@ -39,14 +39,14 @@ Config.Framework = 'qbox'
 
 -- Kamera ayarları
 Config.Camera = {
-    TransitionTime = 800,       -- Geçiş süresi (ms)
-    ReturnTime = 600,           -- Dönüş süresi (ms)
-    OffsetX = 0.0,              -- X ekseni ofseti
-    OffsetY = 1.35,             -- Y ekseni ofseti (karakterden uzaklık)
-    OffsetZ = 0.45,             -- Z ekseni ofseti (yükseklik)
-    DofStrength = 1.0,          -- Alan derinliği şiddeti
-    BlurEffect = false,         -- Arka plan bulanıklık efekti
-    Timecycle = 'hud_def_blur'  -- Kullanılacak filtre
+    TransitionTime = 800,     
+    ReturnTime = 600,          
+    OffsetX = 0.0,             
+    OffsetY = 1.35,           
+    OffsetZ = 0.45,             
+    DofStrength = 1.0,        
+    BlurEffect = false,        
+    Timecycle = 'hud_def_blur' 
 }
 
 -- Sunucudan ayrılma mesajı
