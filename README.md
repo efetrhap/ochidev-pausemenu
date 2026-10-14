@@ -27,6 +27,21 @@ FiveM için modern Pause Menü. Qbox ve QBCore altyapılarını destekler.
 
 ---
 
+## Kurulum
+
+1. Kaynağı sunucunuzun `resources` dizinine indirin veya klonlayın:
+   ```bash
+   git clone https://github.com/efetrhap/ochidev-pausemenu.git
+   ```
+2. `server.cfg` dosyanıza ekleyin:
+   ```cfg
+   ensure ox_lib
+   ensure ochidev-pausemenu
+   ```
+3. `config.lua` dosyasından framework tercihinizi belirleyin (`qbox` veya `qbcore`).
+
+---
+
 ## Yapılandırma
 
 `config.lua` dosyasındaki temel seçenekler:

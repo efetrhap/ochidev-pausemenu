@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pause Menu</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/app.js" defer></script>
+</head>
+
+<body>
+    <div id="pause_wrapper">
+        <div class="vertical-guide"></div>
+
+        <div class="left-container">
+            <div class="profile-section">
+                <div class="slot-badge">
+                    <span class="slot-time" id="server_time">03:25</span>
+                </div>
+
+                <h1 class="player-name" id="player_name">OchiDev</h1>
+
+
+                <div class="finance-stack">
+                    <div class="finance-item">
+                        <span class="finance-label" id="label_cash">CASH BALANCE</span>
+                        <span class="finance-val cash" id="player_cash">$0</span>
+                    </div>
+                    <div class="finance-item">
+                        <span class="finance-label" id="label_bank">BANK ACCOUNT</span>
+                        <span class="finance-val bank" id="player_bank">$0</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <div class="actions-section">
+                <nav class="nav-list">
+                    <button class="nav-card" id="btn_resume">
+                        <span class="nav-num">01</span>
+                        <span class="nav-text" id="label_resume">RESUME</span>
+                        <svg class="nav-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </button>
+                    <button class="nav-card" id="btn_map">
+                        <span class="nav-num">02</span>
+                        <span class="nav-text" id="label_map">MAP</span>
+                        <svg class="nav-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </button>
+                    <button class="nav-card" id="btn_settings">
+                        <span class="nav-num">03</span>
+                        <span class="nav-text" id="label_settings">SETTINGS</span>
+                        <svg class="nav-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </button>
+                    <div class="nav-card danger" id="btn_disconnect">
+                        <div class="nav-card-normal">
+                            <span class="nav-num">04</span>
+                            <span class="nav-text" id="label_disconnect">DISCONNECT</span>
+                            <svg class="nav-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                        </div>
+                        <div class="nav-card-confirm" style="display: none;">
+                            <span class="confirm-query">EMİN MİSİN?</span>
+                            <div class="confirm-actions">
+                                <button class="confirm-btn confirm-yes" id="btn_confirm_disconnect">EVET</button>
+                                <button class="confirm-btn confirm-no" id="btn_cancel_disconnect">İPTAL</button>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+
+                <div class="nav-footer">
+                    <span>ÇIKIŞ YAPMAK İÇİN ESC TUŞUNA BASIN</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
