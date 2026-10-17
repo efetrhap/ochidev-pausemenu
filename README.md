@@ -3,40 +3,39 @@
 ![Qbox](https://img.shields.io/badge/Qbox-supported-brightgreen.svg)
 ![QBCore](https://img.shields.io/badge/QBCore-supported-brightgreen.svg)
 
-FiveM için modern Pause Menü. Qbox ve QBCore altyapılarını destekler.
+Modern Pause Menu for FiveM with full support for Qbox and QBCore frameworks.
 
 ---
 
-## Özellikler
+## Features
 
-- **Dinamik Kamera Takibi:** Menü açıldığında kamerayı karaktere veya araca kilitler; hareket halindeyken ya da koşarken kadrajdan çıkma yaşanmaz.
-- **Düşük Kaynak Tüketimi:** Menü kapalıyken 0.00ms, menü açıkken ~0.01ms resmon tüketimi.
-- **Framework Uyumluluğu:** Qbox (`qbx_core`) ve QBCore (`qb-core`) otomatik tespiti.
-- **Veri Güvenliği & Optimizasyon:** `ox_lib` callback entegrasyonu, oyuncu bazlı rate-limit ve sunucu önbellekleme.
-- **Harita ve Ayarlar Entegrasyonu:** Orijinal GTA V harita ve ayarlar menüsüne sorunsuz geçiş.
-- **Onaylı Çıkış:** Yanlışlıkla sunucudan ayrılmayı önleyen onay mekanizması.
+- **Dynamic Camera Tracking:** Locks the camera onto the player character or vehicle upon opening; prevents framing issues while moving or sprinting.
+- **Ultra-Low Resource Usage:** 0.00ms resmon consumption while idle, ~0.01ms while active.
+- **Framework Compatibility:** Built-in automatic detection for Qbox (`qbx_core`) and QBCore (`qb-core`).
+- **Data Safety & Performance:** Powered by `ox_lib` callbacks, player-based rate limiting, and server-side caching.
+- **Native GTA V Integration:** Seamless transitions directly into the default GTA V map and settings menus.
+- **Confirmation Dialogue:** Built-in confirmation modal to prevent accidental server disconnections.
 
 ---
 
-## Gereksinimler
+## Requirements
 
 - [ox_lib](https://github.com/overextended/ox_lib)
-- Desteklenen bir framework: `qbx_core` veya `qb-core`
+- Supported framework: `qbx_core` or `qb-core`
 
 ---
 
+## Configuration
 
-## Yapılandırma
-
-`config.lua` dosyasındaki temel seçenekler:
+Core settings available inside `config.lua`:
 
 ```lua
 Config = {}
 
--- Framework seçimi: 'qbox' | 'qbcore'
+-- Framework selection: 'qbox' | 'qbcore'
 Config.Framework = 'qbox'
 
--- Kamera ayarları
+-- Camera settings
 Config.Camera = {
     TransitionTime = 800,     
     ReturnTime = 600,          
@@ -48,24 +47,24 @@ Config.Camera = {
     Timecycle = 'hud_def_blur' 
 }
 
--- Sunucudan ayrılma mesajı
-Config.DisconnectReason = 'Sunucudan ayrıldınız.'
+-- Disconnect message
+Config.DisconnectReason = 'Disconnected from server.'
 
--- Menü metinleri
+-- Menu localization labels
 Config.Labels = {
-    Resume = 'Devam Et',
-    Map = 'Harita',
-    Settings = 'AYARLAR',
-    Disconnect = 'Sunucudan Çıkış',
-    Job = 'İŞ',
-    Cash = 'NAKİT',
-    Bank = 'BANKA'
+    Resume = 'Resume',
+    Map = 'Map',
+    Settings = 'SETTINGS',
+    Disconnect = 'Disconnect',
+    Job = 'JOB',
+    Cash = 'CASH',
+    Bank = 'BANK'
 }
 ```
 
 ---
 <img width="1917" height="1017" alt="pausemenu" src="https://github.com/user-attachments/assets/d42d1b1a-e640-4c43-90c2-356387169c13" />
 
-## Lisans
+## License
 
-Bu proje MIT lisansı altındadır.
+MIT License.
